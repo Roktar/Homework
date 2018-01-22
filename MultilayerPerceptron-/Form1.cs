@@ -148,6 +148,7 @@ namespace MLP {
         }
 
         private double backPropagation(int current) {
+            // 매개변수 제거하고 함수 한 번당 75회 돌아가게 바꿔도 될 듯.
             double error = 0.0f;
             double[] out_deltaValue = new double[3], prev_deltaValue = new double[4];
 
